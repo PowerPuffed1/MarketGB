@@ -157,8 +157,18 @@ ul
 	justify-content: space-between
 	&__search
 		margin-left: 41px
-	&__icon
+	&__icon:not(:last-child)
 		margin-right: 33px
+		// &__circle
+			// color: white
+			// background-color: #F16D7F
+			// height: 29px
+			// width: 29px
+			// border-radius: 10px
+.header__basket-25px:not(:first-child)
+	margin-left: 25px
+.header__basket-42px
+	margin-left: 42px
 
 .promo
 	background: #F1E4E6
@@ -171,7 +181,7 @@ ul
 	&__photo
 		width: 100%
 	&__text
-		width: 50%
+		min-width: 50%
 	&__content
 		margin-top: 40%
 		border-left: 12px solid #F16D7F
@@ -195,9 +205,8 @@ ul
 	color: #F16D7F
 
 .sale
-	padding-top: 64px
-	padding-bottom: 96px
 	&__top
+		padding-top: 64px
 		display: flex
 		padding-bottom: 30px
 	&__img
@@ -233,9 +242,11 @@ ul
 		text-align: center
 		color: #F16D7F
 
+	.sale__bottom
+		padding-bottom: 96px
+
 // product-box make for index page and catalog page
 .product-box
-	padding-bottom: 96px
 	&__heading
 		font-family: Lato
 		font-style: normal
@@ -327,6 +338,7 @@ ul
 	display: flex
 	justify-content: center
 	outline: none
+	padding-bottom: 96px
 	&__text
 		transition: all 0.5s
 		padding: 15px 39px
@@ -344,14 +356,14 @@ ul
 		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
 
 .advantages
-	height: 341px
 	background: #222224
 	&__content
-		height: 134px
 		display: flex
 		justify-content: center
 		text-align: center
-		padding-top: 103px
+		padding: 104px 0 104px 0
+	&__box
+		padding: 0 35px 0 35px
 
 .delivery__img
 	margin-bottom: 28px
@@ -384,32 +396,31 @@ ul
 	color: #FBFBFB
 
 .subscribe
-	height: 448px
 	background-image: url(../img/subscribe.png)
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
 	&__content
+		min-height: 448px
 		display: flex
+		flex-direction: row
 		justify-content: space-between
 		align-items: center
-		flex-wrap: wrap
 	&__info
 		width: 360px
-		margin-top: 97px
 		display: flex
 		flex-direction: column
 		align-items: center
 		text-align: center
-
-.info__text
-	font-family: Lato
-	font-style: normal
-	font-weight: normal
-	font-size: 20px
-	line-height: 24px
-	color: #222224
-	margin-top: 30px
+	&__texting
+		font-family: Lato
+		font-style: normal
+		font-weight: normal
+		font-size: 20px
+		line-height: 24px
+		text-align: center
+		color: #222224
+		margin-top: 30px
 
 .subscribe__botton
 	width: 557px
@@ -417,7 +428,6 @@ ul
 	flex-direction: column
 	align-items: center
 	text-align: center
-	margin-top: 150px
 
 .botton__header
 	font-family: Lato
@@ -486,7 +496,7 @@ ul
 		justify-content: space-between
 		text-align: center
 		align-items: center
-		height: 79px
+		min-height: 79px
 	&__sign
 		font-family: Lato
 		font-style: normal
@@ -740,6 +750,126 @@ summary
 // CATALOG PAGE END
 
 // PRODUCT PAGE START
+
+.slidering
+	background-color: #F7F7F7
+	height: 777px
+	display: flex
+	justify-content: center
+	align-items: center
+	justify-content: space-between
+	&__box
+		width: 47px
+		height: 47px
+		background: rgba(42, 42, 42, 0.15)
+		display: flex
+		align-items: center
+		justify-content: center
+		&:hover
+			fill: #F16D7F
+
+.info
+	max-width: 1141px
+	height: 601px
+	background: #FFFFFF
+	margin: -64px auto 125px auto
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
+	border: 1px solid #EAEAEA
+	&__title
+		font-family: Lato
+		font-style: normal
+		font-weight: 300
+		font-size: 14px
+		line-height: 17px
+		color: #F16D7F
+		padding-top: 64px
+	&__line-small
+		background: #EF5B70
+		width: 63px
+		height: 3px
+		margin-top: 12px
+	&__subject
+		font-family: Lato
+		font-style: normal
+		font-weight: 300
+		font-size: 18px
+		line-height: 22px
+		color: #4D4D4D
+		margin-top: 12px
+	&__text
+		font-family: Lato
+		font-style: normal
+		font-weight: 300
+		font-size: 14px
+		line-height: 17px
+		text-align: center
+		color: #5E5E5E
+		margin-top: 48px
+		width: 48%
+	&__price
+		font-family: Lato
+		font-style: normal
+		font-weight: 300
+		font-size: 24px
+		line-height: 29px
+		color: #EF5B70
+		margin-top: 32px
+	&__line-long
+		border: 1px solid #EAEAEA
+		width: 641px
+		margin-top: 64px
+	&__choose
+		margin-top: 64px
+		display: flex
+		justify-content: center
+		font-family: Lato
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 17px
+		color: #6F6E6E
+	&__details:not(:last-child)
+		margin-right: 23px
+	&__summary
+		display: flex
+		justify-content: center
+		align-items: center
+	&__check
+		margin-left: 9px
+	&__form
+		margin-top: 48px
+	&__botton
+		width: 212px
+		height: 48px
+		border: 1px solid #FF6A6A
+		font-family: Lato
+		font-style: normal
+		font-weight: normal
+		font-size: 16px
+		line-height: 19px
+		fill: #F26376
+		color: #F26376
+		background-color: #fff
+		display: flex
+		justify-content: center
+		align-items: center
+		outline: none
+		transition: all 0.5s
+		cursor: pointer
+	&__botton:hover
+		fill: white
+		color: white
+		background-color: #f16d7f
+		transform: scale(1.03)
+		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+	svg
+		margin-right: 23px
+
+.product__page-buttom
+	margin-bottom: 98px
 
 // PRODUCT PAGE END
 
@@ -1062,4 +1192,31 @@ summary
 				content: url(../img/registaration_subject_table_check.svg)
 				margin-right: 22px
 
-// REGISTRATION PAGE START 
+// REGISTRATION PAGE END
+
+@import 'm768'
+
+@import 'm425'
+
+// .center
+// 	padding: 0 15px
+
+// @media (min-width: 576px)
+// 	.center
+// 		padding-left: calc(50% - 270px)
+// 		padding-right: calc(50% - 288px)
+
+// @media (min-width: 768px)
+// 	.center
+// 		padding-left: calc(50% - 360px)
+// 		padding-right: calc(50% - 384px)
+
+// @media (min-width: 992px)
+// 	.center
+// 		padding-left: calc(50% - 480px)
+// 		padding-right: calc(50% - 480px)
+
+// @media (min-width: 1180px)
+// 	.center
+// 		padding-left: calc(50% - 570px)
+// 		padding-right: calc(50% - 570px)
