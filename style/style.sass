@@ -40,31 +40,6 @@ ul
 
 /**
  * ----------------------------------------
- * animation text-focus-in header promo__text
- * ----------------------------------------
- */
-.focus-in-contract-bck
-	-webkit-animation: focus-in-contract-bck 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
-	animation: focus-in-contract-bck 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
-
-@keyframes focus-in-contract-bck
-	0%
-		letter-spacing: 1em
-		-webkit-transform: translateZ(300px)
-		transform: translateZ(300px)
-		-webkit-filter: blur(12px)
-		filter: blur(12px)
-		opacity: 0
-
-	100%
-		-webkit-transform: translateZ(12px)
-		transform: translateZ(12px)
-		-webkit-filter: blur(0)
-		filter: blur(0)
-		opacity: 1
-
-/**
- * ----------------------------------------
  * animation jello-horizontal header promo__content
  * ----------------------------------------
  */
@@ -269,7 +244,7 @@ ul
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
-		margin-bottom: 48px
+		margin-bottom: 18px
 
 .product
 	width: 360px
@@ -463,11 +438,10 @@ ul
 	display: flex
 	text-align: center
 	color: #222224
-	opacity: 0.67
 	background: #E1E1E1
 	outline: none
 
-.button__press
+.botton__press
 	box-sizing: border-box
 	border: 0px
 	border-radius: 0px 40px 40px 0px
@@ -479,7 +453,7 @@ ul
 	color: #FFFFFF
 	width: 100px
 	height: 49px
-	background: #E05C6E
+	background: #F16D7F
 	cursor: pointer
 	outline: none
 	transition: all .5s ease
@@ -496,7 +470,7 @@ ul
 		justify-content: space-between
 		text-align: center
 		align-items: center
-		min-height: 79px
+		min-height: 80px
 	&__sign
 		font-family: Lato
 		font-style: normal
@@ -719,6 +693,7 @@ summary
 	border-radius: 6px
 	padding-left: 16px
 	padding-right: 16px
+	margin-bottom: 96px
 	&__right
 		margin-top: 3px
 	&__box
@@ -1194,29 +1169,8 @@ summary
 
 // REGISTRATION PAGE END
 
-@import 'm768'
+@import 'm1180'
 
-@import 'm425'
+@import 'm767'
 
-// .center
-// 	padding: 0 15px
-
-// @media (min-width: 576px)
-// 	.center
-// 		padding-left: calc(50% - 270px)
-// 		padding-right: calc(50% - 288px)
-
-// @media (min-width: 768px)
-// 	.center
-// 		padding-left: calc(50% - 360px)
-// 		padding-right: calc(50% - 384px)
-
-// @media (min-width: 992px)
-// 	.center
-// 		padding-left: calc(50% - 480px)
-// 		padding-right: calc(50% - 480px)
-
-// @media (min-width: 1180px)
-// 	.center
-// 		padding-left: calc(50% - 570px)
-// 		padding-right: calc(50% - 570px)
+@import 'm374'
